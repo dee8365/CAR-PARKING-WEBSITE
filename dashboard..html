@@ -1,0 +1,73 @@
+
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Car Parking System - Dashboard</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <nav class="navbar">
+    <div class="logo">ParkEasy</div>
+    <div class="nav-links">
+      <a href="landing.html">Home</a>
+      <a href="login.html">Login</a>
+      <a href="C:\Users\Deepro Nawn\New folder\registration\tic-tac-toe\dashboard..html" class="active">Dashboard</a>
+    </div>
+  </nav>
+
+  <div class="container">
+    
+       <div class="stats-row">
+      <div class="stat-card">
+        <div class="stat-number" id="totalSlots">10</div>
+        <div class="stat-label">Total Slots</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" id="parkedCount">0</div>
+        <div class="stat-label">Parked Vehicles</div>
+      </div>
+      <div class="stat-card">
+        <div class="stat-number" id="freeSlots">10</div>
+        <div class="stat-label">Available Slots</div>
+      </div>
+    </div>
+   <div class="form-group">
+
+      <h3>Park a New Vehicle</h3>
+      <form id="parkForm" class="inline-form">
+        <div class="form-group">
+          <label for="carNumber">Car Number Plate</label>
+          <input type="text" id="carnumber" placeholder="e.g. WB-02-1234" required>
+        </div>
+        <div class="form-group">
+          <label for="ownerName">Owner Name</label>
+          <input type="text" id="ownername" placeholder="e.g. John Doe" required>
+        </div>
+        <button type="button" class="btn" style="align-self: flex-end;">Park Car</button>
+      </form>
+      <div id="parkError" class="error-msg"></div>
+    </div>
+    <div class="card">
+      <h3>Parked Vehicles List</h3>
+      <table class="table">
+        <thead>
+          <tr>
+            <th>Slot #</th>
+            <th>Car Number</th>
+            <th>Owner Name</th>
+            <th>Entry Time</th>
+                    </tr>
+        </thead>
+        <tbody id="carTableBody">
+        
+        </tbody>
+      </table>
+    </div>
+
+  </div>
+
+  <script src="check.js"></script>
+</body>
+</html>
